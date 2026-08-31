@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">A11</title>
+  <desc id="desc">A11 mark</desc>
+  <rect width="64" height="64" rx="12" fill="#171714"/>
+  <path d="M13 48 27.5 16h9L51 48h-8l-3.2-7.6H24.2L21 48h-8Zm14-14h10l-5-12-5 12Zm19-18h7v32h-7V16Z" fill="#f4efe6"/>
+</svg>

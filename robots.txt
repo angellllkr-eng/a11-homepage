@@ -1,0 +1,9 @@
+﻿User-agent: *
+Allow: /
+Disallow: /a11-homepage/console
+Disallow: /a11-homepage/console/
+
+Sitemap: https://angellllkr-eng.github.io/a11-homepage/sitemap.xml
+
+# Private operational surfaces are not public search content.
+# The Evidence Room is intentionally excluded from the public index.
