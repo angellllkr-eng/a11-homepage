@@ -1,213 +1,35 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A11 builds evidence-gated agent systems for retrieval, decisions, and controlled execution.">
-  <meta name="theme-color" content="#f7f8f6">
-  <title>A11 — Build at the frontier. Operate on evidence.</title>
-  <link rel="canonical" href="https://angellllkr-eng.github.io/a11-homepage/">
-  <link rel="icon" href="/a11-homepage/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="/a11-homepage/site.webmanifest">
-  <link rel="stylesheet" href="/a11-homepage/site.css">
-  <link rel="stylesheet" href="/a11-homepage/home.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A11 builds evidence-gated agent systems for retrieval, decisions, and controlled execution.">
+<meta name="theme-color" content="#f7f8f6">
+<title>A11 — Evidence-gated agent systems</title>
+<link rel="canonical" href="https://angellllkr-eng.github.io/a11-homepage/">
+<link rel="icon" href="/a11-homepage/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/a11-homepage/site.css"><link rel="stylesheet" href="/a11-homepage/home.css">
+<style>
+@keyframes a11Hero{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes a11Float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.home-hero-copy,.home-hero-visual{animation:a11Hero .8s ease-out both}.home-hero-visual{animation-delay:.12s}.home-preview-window{animation:a11Float 8s ease-in-out infinite}
+.home-route-card,.home-bento-card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.home-route-card:hover,.home-bento-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(16,40,43,.10)}
+a:focus-visible{outline:3px solid rgba(61,89,214,.35);outline-offset:4px}
+@media(max-width:760px){.home-hero{grid-template-columns:1fr}.home-hero-visual{min-width:0}.home-preview-window{animation:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body class="home-body">
-  <header class="masthead home-masthead">
-    <a class="home-wordmark" href="/a11-homepage/" aria-label="A11 home">
-      <span class="home-mark">A11</span>
-      <span class="home-wordmark-copy">agent systems <i>/</i> evidence gates</span>
-    </a>
-    <nav class="home-nav" aria-label="Primary navigation">
-      <div class="home-nav-links">
-        <a href="/a11-homepage/frontiers/">Frontiers</a>
-        <a href="/a11-homepage/builders/">Builders</a>
-        <a href="/a11-homepage/skills/">Skills</a>
-        <a href="/a11-homepage/docs/">Docs</a>
-      </div>
-      <a class="home-nav-cta" href="/a11-homepage/access/">Request access <span>↗</span></a>
-    </nav>
-  </header>
-
-  <main class="home-page">
-    <section class="home-hero" aria-labelledby="hero-title">
-      <div class="home-hero-copy">
-        <p class="home-eyebrow"><span class="home-live-dot"></span>A11 / controlled intelligence infrastructure</p>
-        <h1 id="hero-title">Build at the frontier.<span>Operate on evidence.</span></h1>
-        <p class="home-lede">A11 gives agents room to move quickly while keeping consequential work reviewable, versioned, and controlled.</p>
-        <div class="home-actions">
-          <a class="home-button home-button--primary" href="/a11-homepage/console/">Open the Evidence Room <span>↘</span></a>
-          <a class="home-text-link" href="#operating-model">See the operating model <span>↓</span></a>
-        </div>
-        <div class="home-proof-line" aria-label="A11 operating boundaries">
-          <span>Owner-controlled</span>
-          <span>Evidence-led</span>
-          <span>Fail-closed by design</span>
-        </div>
-      </div>
-
-      <div class="home-hero-visual" aria-label="Illustrative Evidence Room interface">
-        <div class="home-preview-window">
-          <div class="home-preview-topbar">
-            <div class="home-preview-brand"><span class="home-preview-logo">A</span><span>Evidence Room</span></div>
-            <span class="home-preview-context">Illustrative surface</span>
-          </div>
-          <div class="home-preview-heading">
-            <div>
-              <span class="home-preview-kicker">Release gate / example record</span>
-              <h2>Evidence before promotion.</h2>
-            </div>
-            <div class="home-preview-count"><strong>06</strong><span>moves</span></div>
-          </div>
-          <div class="home-preview-rows">
-            <div class="home-preview-row">
-              <div><strong>Repository state</strong><span>Source and revision are identified.</span></div>
-              <b class="home-status home-status--verified"><i></i>Verified</b>
-            </div>
-            <div class="home-preview-row">
-              <div><strong>Runtime state</strong><span>Remote configuration is not assumed.</span></div>
-              <b class="home-status home-status--pending"><i></i>Pending</b>
-            </div>
-            <div class="home-preview-row">
-              <div><strong>Release decision</strong><span>Promotion waits for the next gate.</span></div>
-              <b class="home-status home-status--blocked"><i></i>Blocked</b>
-            </div>
-          </div>
-          <div class="home-preview-footer">
-            <span class="home-preview-rule"><i></i></span>
-            <span>Example state / not live telemetry</span>
-          </div>
-        </div>
-        <div class="home-visual-note"><span>01</span> The system shows what is known, what is missing, and who decides next.</div>
-      </div>
-    </section>
-
-    <section class="home-principles" aria-label="A11 operating principles">
-      <div class="home-principle-intro"><span class="home-section-index">A11 / 01</span><strong>Capability and certainty are different things.</strong></div>
-      <div class="home-principle-grid">
-        <div><span>01</span><strong>Observe</strong><p>Separate the current state from the proposed state.</p></div>
-        <div><span>02</span><strong>Protect</strong><p>Keep identity, authority, secrets, and data inside clear boundaries.</p></div>
-        <div><span>03</span><strong>Verify</strong><p>Use direct evidence before promoting an outcome.</p></div>
-        <div><span>04</span><strong>Handoff</strong><p>Make the next owner decision visible and accountable.</p></div>
-      </div>
-    </section>
-
-    <section id="operating-model" class="home-section home-model" aria-labelledby="model-title">
-      <div class="home-section-heading">
-        <div>
-          <p class="home-section-label">The operating model</p>
-          <h2 id="model-title">One system.<br><em>Six controlled moves.</em></h2>
-        </div>
-        <p>A11 turns agent capability into an inspectable operating loop. Each move has a purpose, a boundary, and a handoff condition.</p>
-      </div>
-      <div class="home-bento">
-        <article class="home-bento-card home-bento-card--feature">
-          <div class="home-card-topline"><span>01</span><span>Understand</span></div>
-          <div>
-            <h3>Start with the real state.</h3>
-            <p>Define the request, scope, constraints, and evidence available before an agent prepares an action.</p>
-          </div>
-          <div class="home-scan-line"><span>request</span><i></i><span>scope</span><i></i><span>constraint</span></div>
-        </article>
-        <article class="home-bento-card home-bento-card--protect">
-          <div class="home-card-topline"><span>02</span><span>Protect</span></div>
-          <h3>Bound the action.</h3>
-          <p>Limit permissions, secrets, and irreversible operations to an explicit trust zone.</p>
-          <span class="home-card-stamp">Trust zone / explicit</span>
-        </article>
-        <article class="home-bento-card home-bento-card--execute">
-          <div class="home-card-topline"><span>03</span><span>Execute</span></div>
-          <h3>Do only what is authorised.</h3>
-          <p>Use identity, version checks, and idempotency to keep execution accountable.</p>
-        </article>
-        <article class="home-bento-card home-bento-card--verify">
-          <div class="home-card-topline"><span>04</span><span>Verify</span></div>
-          <h3>Test the result.</h3>
-          <p>Match the outcome to a defined condition before calling it ready.</p>
-          <div class="home-checkmark">✓</div>
-        </article>
-        <article class="home-bento-card home-bento-card--record">
-          <div class="home-card-topline"><span>05</span><span>Record</span></div>
-          <h3>Leave a trace.</h3>
-          <p>Capture a redacted evidence event that another owner can inspect.</p>
-        </article>
-        <article class="home-bento-card home-bento-card--handoff">
-          <div class="home-card-topline"><span>06</span><span>Handoff</span></div>
-          <h3>Keep control moving.</h3>
-          <p>Make the next decision, owner, and release boundary explicit.</p>
-          <a href="/a11-homepage/release-gate/" class="home-card-link">View release gates <span>↗</span></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="home-section home-surfaces" aria-labelledby="surfaces-title">
-      <div class="home-section-heading">
-        <div>
-          <p class="home-section-label">Public surfaces</p>
-          <h2 id="surfaces-title">A clear front door<br><em>for agent reality.</em></h2>
-        </div>
-        <p>Explore the public architecture, the builder perspective, the reusable skills, and the evidence surface without confusing a concept with a deployment.</p>
-      </div>
-      <div class="home-route-grid">
-        <a class="home-route-card" href="/a11-homepage/frontiers/">
-          <span class="home-route-number">01 / frontier</span>
-          <strong>Agent Frontiers</strong>
-          <p>Reasoning, tools, memory, and human authority as one governed system.</p>
-          <span class="home-route-arrow">↗</span>
-        </a>
-        <a class="home-route-card" href="/a11-homepage/builders/">
-          <span class="home-route-number">02 / build</span>
-          <strong>Builders</strong>
-          <p>Patterns for secure bridges, typed events, transactions, and audit records.</p>
-          <span class="home-route-arrow">↗</span>
-        </a>
-        <a class="home-route-card" href="/a11-homepage/skills/">
-          <span class="home-route-number">03 / practice</span>
-          <strong>Skills</strong>
-          <p>Reusable operating knowledge for turning a proposal into verified work.</p>
-          <span class="home-route-arrow">↗</span>
-        </a>
-        <a class="home-route-card home-route-card--accent" href="/a11-homepage/console/">
-          <span class="home-route-number">04 / inspect</span>
-          <strong>Evidence Room</strong>
-          <p>Repository facts, validation results, decision records, and release boundaries.</p>
-          <span class="home-route-arrow">↘</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="home-evidence" aria-labelledby="evidence-title">
-      <div class="home-evidence-copy">
-        <p class="home-section-label">Evidence Room</p>
-        <h2 id="evidence-title">Know what happened.<br><em>Prove what is ready.</em></h2>
-        <p>The Evidence Room keeps verified records distinguishable from proposals and keeps unknown runtime state labelled as unknown until it is directly established.</p>
-        <a class="home-button home-button--light" href="/a11-homepage/console/">Inspect the evidence model <span>↘</span></a>
-      </div>
-      <div class="home-evidence-ledger">
-        <div class="home-ledger-header"><span>Evidence ledger</span><span>Owner-controlled</span></div>
-        <div class="home-ledger-item"><span class="home-ledger-marker home-ledger-marker--green">01</span><div><strong>Verified records</strong><span>Remain tied to a source, test, or decision.</span></div><b>clear</b></div>
-        <div class="home-ledger-item"><span class="home-ledger-marker home-ledger-marker--blue">02</span><div><strong>Pending boundaries</strong><span>Stay visible until the next gate is satisfied.</span></div><b>open</b></div>
-        <div class="home-ledger-item"><span class="home-ledger-marker home-ledger-marker--amber">03</span><div><strong>Unknown state</strong><span>Is never presented as live or deployed.</span></div><b>held</b></div>
-        <div class="home-ledger-item"><span class="home-ledger-marker home-ledger-marker--ink">04</span><div><strong>Next handoff</strong><span>Names the decision that keeps the system moving.</span></div><b>named</b></div>
-      </div>
-    </section>
-
-    <section class="home-standard" aria-labelledby="standard-title">
-      <div class="home-standard-label"><span class="home-section-index">A11 / 02</span><span>Operating standard</span></div>
-      <div class="home-standard-body">
-        <h2 id="standard-title">Proposed is not executed.<br><em>Configured is not deployed.</em></h2>
-        <p>A11 can prepare, explain, validate, and record. Consequential execution remains bounded by identity, authority, version validity, idempotency, and explicit handoff.</p>
-        <div class="home-standard-actions"><a class="home-button home-button--primary" href="/a11-homepage/access/">Request a controlled walkthrough <span>↗</span></a><a class="home-text-link" href="/a11-homepage/about/">Read the A11 standard <span>↗</span></a></div>
-      </div>
-    </section>
-
-    <section class="home-final-cta" aria-labelledby="final-title">
-      <p class="home-section-label">A11 / next surface</p>
-      <h2 id="final-title">Make agents useful.<br><em>Keep reality accountable.</em></h2>
-      <div class="home-actions"><a class="home-button home-button--primary" href="/a11-homepage/console/">Open the Evidence Room <span>↘</span></a><a class="home-text-link" href="https://github.com/angellllkr-eng/a11-rag-platform">Inspect the repository <span>↗</span></a></div>
-    </section>
-  </main>
-
-  <footer class="home-footer"><span>A11</span><span>Angel L. Krastev — Founder and CEO</span><span>evidence over narrative</span></footer>
-</body>
-</html>
+<header class="masthead home-masthead">
+<a class="home-wordmark" href="/a11-homepage/" aria-label="A11 home"><span class="home-mark">A11</span><span class="home-wordmark-copy">agent systems <i>/</i> evidence gates</span></a>
+<nav class="home-nav" aria-label="Primary navigation"><div class="home-nav-links"><a href="/a11-homepage/frontiers/">Frontiers</a><a href="/a11-homepage/builders/">Builders</a><a href="/a11-homepage/skills/">Skills</a><a href="/a11-homepage/docs/">Docs</a></div><a class="home-nav-cta" href="/a11-homepage/access/">Request access <span>↗</span></a></nav>
+</header>
+<main class="home-page">
+<section class="home-hero" aria-labelledby="hero-title"><div class="home-hero-copy"><p class="home-eyebrow"><span class="home-live-dot"></span>A11 / controlled intelligence infrastructure</p><h1 id="hero-title">Build at the frontier.<span>Operate on evidence.</span></h1><p class="home-lede">A11 gives agents room to move quickly while keeping consequential work reviewable, versioned, and controlled.</p><div class="home-actions"><a class="home-button home-button--primary" href="/a11-homepage/console/">Open the Evidence Room <span>↘</span></a><a class="home-text-link" href="#operating-model">See the operating model <span>↓</span></a></div><div class="home-proof-line"><span>Owner-controlled</span><span>Evidence-led</span><span>Fail-closed by design</span></div></div>
+<div class="home-hero-visual"><div class="home-preview-window"><div class="home-preview-topbar"><div class="home-preview-brand"><span class="home-preview-logo">A</span><span>Evidence Room</span></div><span class="home-preview-context">Illustrative surface</span></div><div class="home-preview-heading"><div><span class="home-preview-kicker">Release gate / example record</span><h2>Evidence before promotion.</h2></div><div class="home-preview-count"><strong>06</strong><span>moves</span></div></div><div class="home-preview-rows"><div class="home-preview-row"><div><strong>Repository state</strong><span>Source and revision are identified.</span></div><b class="home-status home-status--verified"><i></i>Verified</b></div><div class="home-preview-row"><div><strong>Runtime state</strong><span>Remote configuration is not assumed.</span></div><b class="home-status home-status--pending"><i></i>Pending</b></div><div class="home-preview-row"><div><strong>Release decision</strong><span>Promotion waits for the next gate.</span></div><b class="home-status home-status--blocked"><i></i>Blocked</b></div></div><div class="home-preview-footer"><span class="home-preview-rule"><i></i></span><span>Example state / not live telemetry</span></div></div><div class="home-visual-note"><span>01</span>The system shows what is known, what is missing, and who decides next.</div></div></section>
+<section class="home-principles" aria-label="A11 operating principles"><div class="home-principle-intro"><span class="home-section-index">A11 / 01</span><strong>Capability and certainty are different things.</strong></div><div class="home-principle-grid"><div><span>01</span><strong>Observe</strong><p>Separate current state from proposed state.</p></div><div><span>02</span><strong>Protect</strong><p>Keep identity, authority, secrets, and data inside clear boundaries.</p></div><div><span>03</span><strong>Verify</strong><p>Use direct evidence before promoting an outcome.</p></div><div><span>04</span><strong>Handoff</strong><p>Make the next owner decision visible and accountable.</p></div></div></section>
+<section id="operating-model" class="home-section home-model"><div class="home-section-heading"><div><p class="home-section-label">The operating model</p><h2>One system.<br><em>Six controlled moves.</em></h2></div><p>A11 turns agent capability into an inspectable operating loop. Each move has a purpose, a boundary, and a handoff condition.</p></div><div class="home-bento"><article class="home-bento-card home-bento-card--feature"><div class="home-card-topline"><span>01</span><span>Understand</span></div><div><h3>Start with the real state.</h3><p>Define the request, scope, constraints, and evidence available before an agent prepares an action.</p></div></article><article class="home-bento-card home-bento-card--protect"><div class="home-card-topline"><span>02</span><span>Protect</span></div><h3>Bound the action.</h3><p>Limit permissions, secrets, and irreversible operations to an explicit trust zone.</p></article><article class="home-bento-card home-bento-card--execute"><div class="home-card-topline"><span>03</span><span>Execute</span></div><h3>Do only what is authorised.</h3><p>Use identity, version checks, and idempotency to keep execution accountable.</p></article><article class="home-bento-card home-bento-card--verify"><div class="home-card-topline"><span>04</span><span>Verify</span></div><h3>Test the result.</h3><p>Match the outcome to a defined condition before calling it ready.</p></article><article class="home-bento-card home-bento-card--record"><div class="home-card-topline"><span>05</span><span>Record</span></div><h3>Leave a trace.</h3><p>Capture a redacted evidence event that another owner can inspect.</p></article><article class="home-bento-card home-bento-card--handoff"><div class="home-card-topline"><span>06</span><span>Handoff</span></div><h3>Keep control moving.</h3><p>Make the next decision, owner, and release boundary explicit.</p><a href="/a11-homepage/release-gate/" class="home-card-link">View release gates <span>↗</span></a></article></div></section>
+<section class="home-section home-surfaces"><div class="home-section-heading"><div><p class="home-section-label">Public surfaces</p><h2>A clear front door<br><em>for agent reality.</em></h2></div><p>Explore the public architecture, builder perspective, reusable skills, and evidence surface without confusing a concept with a deployment.</p></div><div class="home-route-grid"><a class="home-route-card" href="/a11-homepage/frontiers/"><span class="home-route-number">01 / frontier</span><strong>Agent Frontiers</strong><p>Reasoning, tools, memory, and human authority as one governed system.</p><span class="home-route-arrow">↗</span></a><a class="home-route-card" href="/a11-homepage/builders/"><span class="home-route-number">02 / build</span><strong>Builders</strong><p>Patterns for secure bridges, typed events, transactions, and audit records.</p><span class="home-route-arrow">↗</span></a><a class="home-route-card" href="/a11-homepage/skills/"><span class="home-route-number">03 / practice</span><strong>Skills</strong><p>Reusable operating knowledge for turning a proposal into verified work.</p><span class="home-route-arrow">↗</span></a><a class="home-route-card home-route-card--accent" href="/a11-homepage/console/"><span class="home-route-number">04 / inspect</span><strong>Evidence Room</strong><p>Repository facts, validation results, decision records, and release boundaries.</p><span class="home-route-arrow">↘</span></a></div></section>
+<section class="home-evidence"><div class="home-evidence-copy"><p class="home-section-label">Evidence Room</p><h2>Know what happened.<br><em>Prove what is ready.</em></h2><p>The Evidence Room keeps verified records distinguishable from proposals and keeps unknown runtime state labelled as unknown until directly established.</p><a class="home-button home-button--light" href="/a11-homepage/console/">Inspect the evidence model <span>↘</span></a></div><div class="home-evidence-ledger"><div class="home-ledger-header"><span>Evidence ledger</span><span>Owner-controlled</span></div><div class="home-ledger-item"><span class="home-ledger-marker home-ledger-marker--green">01</span><div><strong>Verified records</strong><span>Tied to a source, test, or decision.</span></div><b>clear</b></div><div class="home-ledger-item"><span class="home-ledger-marker home-ledger-marker--blue">02</span><div><strong>Pending boundaries</strong><span>Stay visible until the next gate is satisfied.</span></div><b>open</b></div><div class="home-ledger-item"><span class="home-ledger-marker home-ledger-marker--amber">03</span><div><strong>Unknown state</strong><span>Never presented as live or deployed.</span></div><b>held</b></div></div></section>
+<section class="home-final-cta"><p class="home-section-label">A11 / next surface</p><h2>Make agents useful.<br><em>Keep reality accountable.</em></h2><div class="home-actions"><a class="home-button home-button--primary" href="/a11-homepage/console/">Open the Evidence Room <span>↘</span></a><a class="home-text-link" href="https://github.com/angellllkr-eng/a11-rag-platform">Inspect the repository <span>↗</span></a></div></section>
+</main><footer class="home-footer"><span>A11</span><span>Angel L. Krastev — Founder and CEO</span><span>evidence over narrative</span></footer>
+</body></html>
