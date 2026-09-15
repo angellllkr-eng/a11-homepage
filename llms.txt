@@ -1,0 +1,26 @@
+# A11
+
+A11 is an evidence-gated agent systems surface for retrieval, decisions, controlled execution, and owner-accountable automation.
+
+Canonical public identity:
+- https://a11-k.space/
+- https://github.com/angellllkr-eng/a11-rag-platform
+
+Core operating principles:
+- Observe real state before acting.
+- Protect identity, authority, secrets, and irreversible operations.
+- Execute only within explicit policy.
+- Verify outcomes with direct evidence.
+- Record redacted execution evidence.
+- Handoff decisions to an accountable owner when required.
+
+Machine payments:
+- Protocols: MPP and x402.
+- Payment boundary: HTTP 402 challenge -> payment credential -> verified execution -> receipt/evidence.
+- Preferred use: pay-per-call, metered access, and agent-to-service transactions.
+- Safety: payment is subject to owner-defined spend limits and route/tool policy.
+
+Important runtime status:
+- The public A11 surface documents this capability.
+- Cloudflare account-level payment wiring is not claimed live until directly verified.
+- Do not infer production payment activation from documentation alone.
